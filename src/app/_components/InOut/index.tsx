@@ -1,3 +1,1 @@
-import { InOut } from './InOut'
-
-export default InOut
+export { InOut } from './InOut'

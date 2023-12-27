@@ -6,8 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "ci": "pnpm prettier && pnpm lint && CI=true pnpm test",
     "lint": "next lint",
-    "prettier": "prettier --write 'src/**/*.ts{,x}'",
+    "lint:fix": "pnpm lint --fix",
+    "prettier": "prettier --check 'src/**/*.ts{,x}'",
+    "prettier:fix": "pnpm prettier --write",
+    "test": "vitest",
     "util": "nodemon ./src/util/main.ts"
   },
   "dependencies": {
@@ -21,15 +25,19 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "jsdom": "^23.0.1",
     "nodemon": "^3.0.2",
     "prettier": "2.8.8",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^1.1.0"
   },
   "volta": {
     "node": "20.10.0",

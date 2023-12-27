@@ -46,9 +46,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
+          <h2>Docs</h2>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
@@ -58,9 +56,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
+          <h2>Learn</h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
 
@@ -70,9 +66,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
+          <h2>Templates</h2>
           <p>Explore starter templates for Next.js.</p>
         </a>
 
@@ -82,9 +76,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+          <h2>Deploy</h2>
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
