@@ -3,7 +3,7 @@
 
 import { Paper } from '@mui/material'
 import { css } from '@emotion/react'
-import InOut from '../../_components/InOut'
+import { InOut } from '@/components/InOut'
 
 const TestPage = () => {
   return (
