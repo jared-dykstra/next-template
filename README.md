@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project:
+
+- bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- using Volta to manage NodeJS and pnpm versions
+- configured for VSCode & format-on-save
+  - with Prettier
+  - with esLint
+- using MaterialUI and emotion for styling
+- including a stub API route
+- including a stub NodeJS utility
 
 ## Getting Started
 
-First, run the development server:
+First, install Volta and enable pnpm support via `VOLTA_FEATURE_PNPM=1`
+
+Second, install dependencies: `pnpm install`
+
+Third, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [http://localhost:3000](http://localhost:3000) with your browser to see the create-next-app placeholder
+- [http://localhost:3000/test](http://localhost:3000/test) for a stateful client-side component using MUI
+- [http://localhost:3000/api/hello](http://localhost:3000/api/hello) for a REST API placeholder
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Run `pnpm run util` to execute `src/util` nodeJS placeholder
