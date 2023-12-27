@@ -11,7 +11,6 @@ describe('InOut', () => {
 
   test('Should toggle state', async () => {
     render(<InOut person="Foo" />)
-    // const button = screen.getByText(/TOGGLE/i)
     const button = screen.getByRole('button', { name: 'Toggle' })
 
     fireEvent.click(button)
