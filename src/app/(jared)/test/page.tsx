@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 'use client'
 
-import { Paper } from '@mui/material'
+import { Paper, Typography } from '@mui/material'
 import { css } from '@emotion/react'
 import { InOut } from '@/components/InOut'
 
@@ -14,7 +14,7 @@ const TestPage = () => {
         padding: 40px;
       `}
     >
-      <div>The Test Page</div>
+      <Typography variant="h1">The Test Page</Typography>
       <InOut />
     </Paper>
   )

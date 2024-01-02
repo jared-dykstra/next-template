@@ -1,20 +1,20 @@
 'use client'
 
 import { useCallback, useState } from 'react'
-import { Button } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 
 export const InOut = ({ person = 'Jared' }: { person?: string }) => {
   const [isIn, setIsIn] = useState(true)
   const handleClick = useCallback(() => setIsIn((prev) => !prev), [])
 
   return (
-    <div>
-      <div>
+    <>
+      <Typography variant="body1">
         {person} is {isIn ? 'here' : 'away'}
-      </div>
+      </Typography>
       <Button variant="outlined" onClick={handleClick}>
         Toggle
       </Button>
-    </div>
+    </>
   )
 }
