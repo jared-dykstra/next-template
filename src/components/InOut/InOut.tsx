@@ -1,18 +1,23 @@
 'use client'
 
-import { useCallback, useState } from 'react'
+import { useContext } from 'react'
 import { Button, Typography } from '@mui/material'
+import { ReducerContext } from '@/app/(jared)/test/ReducerContext'
 
 export const InOut = ({ person = 'Jared' }: { person?: string }) => {
-  const [isIn, setIsIn] = useState(true)
-  const handleClick = useCallback(() => setIsIn((prev) => !prev), [])
+  const { state, dispatch } = useContext(ReducerContext) ?? {}
 
   return (
     <>
       <Typography variant="body1">
-        {person} is {isIn ? 'here' : 'away'}
+        {person} is {Boolean(state?.isIn[person]) ? 'here' : 'away'}
       </Typography>
-      <Button variant="outlined" onClick={handleClick}>
+      <Button
+        variant="outlined"
+        onClick={() =>
+          dispatch?.({ type: 'TogglePresence', payload: { name: person } })
+        }
+      >
         Toggle
       </Button>
     </>
